@@ -5,42 +5,44 @@ Firmware for the RP2040, capable of emulating gamepads for several game consoles
 
 [**Visit the web app here**](https://wiredopposite.github.io/OGX-Mini-WebApp/) to change your mappings and deadzone settings. To pair the OGX-Mini with the web app via USB, plug your controller in, then connect it to your PC, hold **Start + Left Bumper + Right Bumper** to enter web app mode. Click "Connect via USB" in the web app and select the OGX-Mini. You can also pair via Bluetooth, no extra steps are needed in that case. 
 
-## Supported platforms
-- Original Xbox
+## 支持的平台
+- 初代 Xbox
 - Playstation 3
-- Nintendo Switch (docked)
+- Nintendo Switch (底座模式)
 - XInput (use [**UsbdSecPatch**](https://github.com/InvoxiPlayGames/UsbdSecPatch) for Xbox 360, or select the patch in J-Runner while flashing your NAND)
 - Playstation Classic
 - DInput
 
-## Changing platforms
+## 变更平台
 By default the OGX-Mini will emulate an OG Xbox controller, you must hold a button combo for 3 seconds to change which platform you want to play on. Your chosen mode will persist after powering off the device. 
+默认情况下手柄转换器将模拟初代XBOX手柄，你需要按下下列任一组合键来切换使用平台。切换平台后手柄断开连接不会受到影响。
 
 Start = Plus (Switch) = Options (Dualsense/DS4)
+开始键=加号(NS)=OPTION（PS4/PS5)
 
 - XInput
-    - Start + Dpad Up 
-- Original Xbox
-    - Start + Dpad Right
-- Original Xbox Steel Battalion
-    - Start + Dpad Right + Right Bumper
-- Original Xbox DVD Remote
-    - Start + Dpad Right + Left Bumper
+    - 开始键 + 方向键上
+- 初代 Xbox
+    - 开始键 + 方向键右
+- 初代 XBOX 铁骑控制器
+    - 开始键 + 方向键右 + 右肩键
+- 初代 XBOX DVD 遥控器
+    - 开始键 + 方向键右 + 左肩键
 - Switch
-    - Start + Dpad Down
+    - 开始键 + 方向键下
 - PlayStation 3
-    - Start + Dpad Left
+    - 开始键 + 方向键左
 - PlayStation Classic
-    - Start + A (Cross for PlayStation and B for Switch gamepads)
-- Web Application Mode
-    - Start + Left Bumper + Right Bumper
+    - 开始键 + A (PS系手柄为X，任天堂系手柄按B)
+- 网页配置模式
+    - 开始键 + 左肩键 + 右肩键
 
-After a new mode is stored, the RP2040 will reset itself so you don't need to unplug it.
+切换模式后，转换器将自动重启，无需重新拔插。
 
-## Supported devices
-### Wired controllers
-- Original Xbox Duke and S
-- Xbox 360, One, Series, and Elite
+## 支持的设备
+### 有线手柄
+- 初代 XBOX 公爵手柄和S手柄
+- XBOX 360/ONE/SERIES/精英手柄
 - Dualshock 3 (PS3)
 - Dualshock 4 (PS4)
 - Dualsense (PS5)
@@ -48,15 +50,16 @@ After a new mode is stored, the RP2040 will reset itself so you don't need to un
 - Nintendo Switch wired
 - Nintendo 64 Generic USB
 - Playstation Classic
-- Generic DInput
-- Generic HID (mappings may need to be editted in the web app)
+- 常规 DInput 手柄
+- 常规 HID 手柄 (可能需要去网页配置模式修改按键映射)
 
 Note: There are some third party controllers that can change their VID/PID, these might not work correctly.
+注意：部分第三方手柄可能无法正常使用。
 
-### Wireless adapters
-- Xbox 360 PC adapter (Microsoft or clones)
-- 8Bitdo v1 and v2 Bluetooth adapters (set to XInput mode)
-- Most wireless adapters that present themselves as Switch/XInput/PlayStation controllers should work
+### 无线适配器
+- XBOX360 PC适配器 (微软官方或克隆)
+- 八位堂v1和v2蓝牙适配器 (设置为 XINPUT 模式)
+- 绝大多数支持 Switch/PS/XINPUT 模式的无线手柄接收器
 
 ### Wireless Bluetooth controllers (Pico W & ESP32)
 **Note:** Bluetooth functionality is in early testing, some may have quirks.

@@ -15,9 +15,11 @@ Firmware for the RP2040, capable of emulating gamepads for several game consoles
 
 ## 变更平台
 By default the OGX-Mini will emulate an OG Xbox controller, you must hold a button combo for 3 seconds to change which platform you want to play on. Your chosen mode will persist after powering off the device. 
+
 默认情况下手柄转换器将模拟初代XBOX手柄，你需要按下下列任一组合键来切换使用平台。切换平台后手柄断开连接不会受到影响。
 
 Start = Plus (Switch) = Options (Dualsense/DS4)
+
 开始键=加号(NS)=OPTION（PS4/PS5)
 
 - XInput
@@ -37,7 +39,9 @@ Start = Plus (Switch) = Options (Dualsense/DS4)
 - 网页配置模式
     - 开始键 + 左肩键 + 右肩键
 
+
 切换模式后，转换器将自动重启，无需重新拔插。
+
 
 ## 支持的设备
 ### 有线手柄
@@ -54,6 +58,7 @@ Start = Plus (Switch) = Options (Dualsense/DS4)
 - 常规 HID 手柄 (可能需要去网页配置模式修改按键映射)
 
 Note: There are some third party controllers that can change their VID/PID, these might not work correctly.
+
 注意：部分第三方手柄可能无法正常使用。
 
 ### 无线适配器

@@ -3,12 +3,7 @@
 
 本项目基于提供
 适用于 RP2040 的固件，能够模拟多种游戏机的游戏手柄。该固件有多种版本，支持以下设备：
-[
-Adafruit Feather USB 主机板
-]
-(
-https://www.adafruit.com/product/5723
-)、树莓派 Pico、树莓派 Pico 2、树莓派 Pico W、树莓派 Pico 2 W、Waveshare RP2040-Zero、Pico/ESP32 混合板以及 4 通道 RP2040-Zero 配置。
+[Adafruit Feather USB 主机板](https://www.adafruit.com/product/5723)、树莓派 Pico、树莓派 Pico 2、树莓派 Pico W、树莓派 Pico 2 W、Waveshare RP2040-Zero、Pico/ESP32 混合板以及 4 通道 RP2040-Zero 配置。
 
 [**访问网页配置程序**](https://conswapp.pages.dev/) ，以更改您的映射和死区设置。要通过 USB 将 OGX-Mini 与网页应用程序配对，请插入控制器，然后将其连接到您的电脑，按住
 **

@@ -11,16 +11,17 @@
 **
 进入网页应用程序模式。在网页应用程序中点击 “通过 USB 连接”，然后选择 OGX-Mini。您也可以通过蓝牙配对，这种情况下无需额外步骤。
 
-## Supported platforms
+## 支持的平台
 - Original Xbox
 - Playstation 3
 - Nintendo Switch (docked)
-- XInput (use [**UsbdSecPatch**](https://github.com/InvoxiPlayGames/UsbdSecPatch) for Xbox 360, or select the patch in J-Runner while flashing your NAND)
+- XInput (在XBOX360上使用，需要为360安装 [**UsbdSecPatch**](https://github.com/InvoxiPlayGames/UsbdSecPatch) 补丁。或者在刷写NAND时在J-Runner中选择补丁。)
 - Playstation Classic
 - DInput
 
-## Changing platforms
-By default the OGX-Mini will emulate an OG Xbox controller, you must hold a button combo for 3 seconds to change which platform you want to play on. Your chosen mode will persist after powering off the device. 
+## 切换平台
+默认情况下，OGX-Mini 将模拟初代 Xbox 控制器，您必须按住组合按键 3 秒钟，以切换您想要游玩的平台。您选择的模式在设备断电后仍会保留。
+
 
 Start = Plus (Switch) = Options (Dualsense/DS4)
 
@@ -41,7 +42,7 @@ Start = Plus (Switch) = Options (Dualsense/DS4)
 - Web Application Mode
     - Start + Left Bumper + Right Bumper
 
-After a new mode is stored, the RP2040 will reset itself so you don't need to unplug it.
+存储新的模式后，RP2040 将自行复位，因此无需将其拔下。
 
 ## Supported devices
 ### Wired controllers
@@ -57,39 +58,39 @@ After a new mode is stored, the RP2040 will reset itself so you don't need to un
 - Generic DInput
 - Generic HID (mappings may need to be editted in the web app)
 
-Note: There are some third party controllers that can change their VID/PID, these might not work correctly.
+注意：有一些第三方控制器可以更改其供应商识别码（VID）/ 产品识别码（PID），这些控制器可能无法正常工作。
 
-### Wireless adapters
-- Xbox 360 PC adapter (Microsoft or clones)
-- 8Bitdo v1 and v2 Bluetooth adapters (set to XInput mode)
-- Most wireless adapters that present themselves as Switch/XInput/PlayStation controllers should work
+### 无线适配器
+- Xbox 360 电脑适配器（微软原装或仿制产品）
+- 8Bitdo v1 和 v2 蓝牙适配器（设置为 XInput 模式）
+- 大多数能模拟成 Switch/XInput/PlayStation 控制器的无线适配器应该都能使用
 
-### Wireless Bluetooth controllers (Pico W & ESP32)
-**Note:** Bluetooth functionality is in early testing, some may have quirks.
-- Xbox Series, One, and Elite 2
+### 无线蓝牙控制器（Pico W 和 ESP32）
+**注意:** 蓝牙功能尚处于早期测试阶段，部分功能可能存在异常。
+- Xbox Series、Xbox One 和 Xbox Elite 2
 - Dualshock 3
 - Dualshock 4
 - Dualsense
 - Switch Pro
 - Steam
 - Stadia
-- And more
+- 以及更多
 
 Please visit [**this page**](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/) for a more comprehensive list of supported controllers and Bluetooth pairing instructions.
 
-## Features new to v1.0.0
-- Bluetooth functionality for the Pico W, Pico 2 W, and Pico+ESP32.
-- Web application (connectable via USB or Bluetooth) for configuring deadzones and buttons mappings, supports up to 8 saved profiles.
-- Pi Pico 2 and Pico 2 W (RP2350) support.
-- Reduced latency by about 3-4 ms, graphs showing comparisons are coming.
-- 4 channel functionality, connect 4 Picos and use one Xbox 360 wireless adapter to control all 4.
-- Delayed USB mount until a controller is plugged in, useful for internal installation (non-Bluetooth boards only). 
-- Generic HID controller support.
-- Dualshock 3 emulation (minus gyros), rumble now works.
-- Steel Battalion controller emulation with a wireless Xbox 360 chatpad.
-- Xbox DVD dongle emulation. You must provide or dump your own dongle firmware, see the Tools directory.
-- Analog button support on OG Xbox and PS3.
-- RGB LED support for RP2040-Zero and Adafruit Feather boards.
+## v1.0.0 新增功能
+- 为 Pico W、Pico 2 W 和 Pico+ESP32 提供蓝牙功能。
+- 网页应用程序（可通过 USB 或蓝牙连接），用于配置死区和按键映射，支持最多 8 个保存的配置文件。
+- 支持 Pi Pico 2 和 Pico 2 W（RP2350）。
+- 延迟降低约 3 - 4 毫秒，对比图表即将推出。
+- 4 通道功能，连接 4 个 Pico，并使用一个 Xbox 360 无线适配器控制全部 4 个设备。
+- 延迟 USB 挂载，直到插入控制器，这对内部安装很有用（仅适用于非蓝牙板）。
+- 支持通用 HID 控制器。
+- 模拟 Dualshock 3（不含陀螺仪），震动功能现已可用。
+- 使用无线 Xbox 360 聊天板模拟 Steel Battalion 控制器。
+- 模拟 Xbox DVD 加密狗。你必须提供或转储自己的加密狗固件，详见 “Tools” 目录。
+- 支持初代 Xbox 和 PS3 的模拟按键。
+- 为 RP2040 - Zero 和 Adafruit Feather 开发板提供 RGB LED 支持。
 
 ## Planned additions
 - More accurate report parser for unknown HID controllers

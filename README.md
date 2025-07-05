@@ -15,7 +15,7 @@ https://www.adafruit.com/product/5723
 **
 ]
 (
-https://wiredopposite.github.io/OGX-Mini-WebApp/
+https://conswap.imkenzong.vip
 )，以更改您的映射和死区设置。要通过 USB 将 OGX-Mini 与网页应用程序配对，请插入控制器，然后将其连接到您的电脑，按住
 **
 开始 + 左扳机 + 右扳机

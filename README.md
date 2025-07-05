@@ -1,9 +1,26 @@
 # OGX-Mini
 ![OGX-Mini Boards](images/OGX-Mini-github.jpg "OGX-Mini Boards")
 
-Firmware for the RP2040, capable of emulating gamepads for several game consoles. The firmware comes in many flavors, supported on the [Adafruit Feather USB Host board](https://www.adafruit.com/product/5723), Pi Pico, Pi Pico 2, Pi Pico W, Pi Pico 2 W, Waveshare RP2040-Zero, Pico/ESP32 hybrid, and a 4-Channel RP2040-Zero setup.
+适用于 RP2040 的固件，能够模拟多种游戏机的游戏手柄。该固件有多种版本，支持以下设备：
+[
+Adafruit Feather USB 主机板
+]
+(
+https://www.adafruit.com/product/5723
+)、树莓派 Pico、树莓派 Pico 2、树莓派 Pico W、树莓派 Pico 2 W、Waveshare RP2040-Zero、Pico/ESP32 混合板以及 4 通道 RP2040-Zero 配置。
 
-[**Visit the web app here**](https://wiredopposite.github.io/OGX-Mini-WebApp/) to change your mappings and deadzone settings. To pair the OGX-Mini with the web app via USB, plug your controller in, then connect it to your PC, hold **Start + Left Bumper + Right Bumper** to enter web app mode. Click "Connect via USB" in the web app and select the OGX-Mini. You can also pair via Bluetooth, no extra steps are needed in that case. 
+[
+**
+在此访问网页应用程序
+**
+]
+(
+https://wiredopposite.github.io/OGX-Mini-WebApp/
+)，以更改您的映射和死区设置。要通过 USB 将 OGX-Mini 与网页应用程序配对，请插入控制器，然后将其连接到您的电脑，按住
+**
+开始 + 左扳机 + 右扳机
+**
+进入网页应用程序模式。在网页应用程序中点击 “通过 USB 连接”，然后选择 OGX-Mini。您也可以通过蓝牙配对，这种情况下无需额外步骤。
 
 ## Supported platforms
 - Original Xbox
